@@ -1,0 +1,6 @@
+@Onebox_backend_HostAddress = http://localhost:5207
+
+GET {{Onebox_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
