@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Onebox-backend.csproj": {}
+    "C:\\Users\\ivanb\\Source\\Repos\\Onebox-backend\\Onebox-backend\\Onebox-backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Onebox-backend.csproj": {
+    "C:\\Users\\ivanb\\Source\\Repos\\Onebox-backend\\Onebox-backend\\Onebox-backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Onebox-backend.csproj",
+        "projectUniqueName": "C:\\Users\\ivanb\\Source\\Repos\\Onebox-backend\\Onebox-backend\\Onebox-backend.csproj",
         "projectName": "Onebox-backend",
-        "projectPath": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Onebox-backend.csproj",
+        "projectPath": "C:\\Users\\ivanb\\Source\\Repos\\Onebox-backend\\Onebox-backend\\Onebox-backend.csproj",
         "packagesPath": "C:\\Users\\ivanb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\obj\\",
+        "outputPath": "C:\\Users\\ivanb\\Source\\Repos\\Onebox-backend\\Onebox-backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ivanb\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,13 +48,17 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.7, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

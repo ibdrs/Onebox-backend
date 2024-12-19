@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Onebox-backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4d430ceafbcdf27407b9513dc62da9600aaeea7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94f6332697ac1f62c2f7de7dd758f5def185a36c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Onebox-backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Onebox-backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
