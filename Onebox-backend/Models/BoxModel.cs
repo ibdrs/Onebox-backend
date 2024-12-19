@@ -49,7 +49,7 @@ namespace Onebox_backend.Models
             }
 
             box.State = false; // Close the box
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
         }
 
         public async Task UnlockAsync(int boxId)
@@ -61,7 +61,7 @@ namespace Onebox_backend.Models
             }
 
             box.State = true; // Open the box
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
         }
     }
 }

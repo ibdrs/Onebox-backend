@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\controllers\\api\\boxcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|solutionrelative:onebox-backend\\controllers\\api\\boxcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\models\\boxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|solutionrelative:onebox-backend\\models\\boxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|solutionrelative:onebox-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|solutionrelative:onebox-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|solutionrelative:onebox-backend\\properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +14,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\appsettings.json",
-              "RelativeDocumentMoniker": "Onebox-backend\\appsettings.json",
-              "ToolTip": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\appsettings.json",
-              "RelativeToolTip": "Onebox-backend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-19T00:37:46.284Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Program.cs",
               "RelativeDocumentMoniker": "Onebox-backend\\Program.cs",
               "ToolTip": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Program.cs",
               "RelativeToolTip": "Onebox-backend\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-19T00:37:33.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BoxModel.cs",
-              "DocumentMoniker": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Models\\BoxModel.cs",
-              "RelativeDocumentMoniker": "Onebox-backend\\Models\\BoxModel.cs",
-              "ToolTip": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Models\\BoxModel.cs",
-              "RelativeToolTip": "Onebox-backend\\Models\\BoxModel.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T00:37:24.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BoxController.cs",
-              "DocumentMoniker": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Controllers\\API\\BoxController.cs",
-              "RelativeDocumentMoniker": "Onebox-backend\\Controllers\\API\\BoxController.cs",
-              "ToolTip": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Controllers\\API\\BoxController.cs",
-              "RelativeToolTip": "Onebox-backend\\Controllers\\API\\BoxController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T00:35:21.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "serviceDependencies.json",
-              "DocumentMoniker": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Properties\\serviceDependencies.json",
-              "RelativeDocumentMoniker": "Onebox-backend\\Properties\\serviceDependencies.json",
-              "ToolTip": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Properties\\serviceDependencies.json",
-              "RelativeToolTip": "Onebox-backend\\Properties\\serviceDependencies.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-19T00:32:06.926Z",
               "EditorCaption": ""
             }
           ]

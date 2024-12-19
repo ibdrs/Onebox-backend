@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hwDoPA9Qjj0=",
+  "dgSpecHash": "h74Gh8Kjkm4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivanb\\Source\\Repos\\Onebox-backend\\Onebox-backend\\Onebox-backend.csproj",
+  "projectFilePath": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Onebox-backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivanb\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ivanb\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
