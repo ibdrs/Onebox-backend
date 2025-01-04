@@ -14,7 +14,20 @@ builder.Services.AddDbContext<OneboxDBContext>(options =>
 
 builder.Services.AddScoped<BoxModel>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost", policy =>
+    {
+        policy.WithOrigins("http://localhost:5173")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 var app = builder.Build();
+
+app.UseCors("AllowLocalhost");
+
 
 if (app.Environment.IsDevelopment())
 {
@@ -23,9 +36,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
 
+app.UseCors("AllowLocalhost");
 app.MapControllers();
 
 app.Run();

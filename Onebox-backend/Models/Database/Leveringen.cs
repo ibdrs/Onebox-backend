@@ -5,7 +5,7 @@ namespace Onebox_backend.Models.Database;
 
 public partial class Leveringen
 {
-    public int Id { get; set; }
+    public int DeliveryId { get; set; }
 
     public TimeOnly? Vertrektijd { get; set; }
 
@@ -26,4 +26,6 @@ public partial class Leveringen
     public bool? Pakketintact { get; set; }
 
     public int KlantId { get; set; }
+
+    public virtual Klant Klant { get; set; } = null!;
 }
