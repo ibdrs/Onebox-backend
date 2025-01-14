@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Onebox_backend.Models;
-using System.Threading.Tasks;
 
-namespace Onebox_backend.Controllers
+namespace Onebox_backend.Controllers.API
 {
     [Route("api/[controller]")]
     [ApiController]

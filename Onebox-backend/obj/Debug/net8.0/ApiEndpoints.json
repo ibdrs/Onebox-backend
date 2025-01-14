@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "Onebox_backend.Controllers.BoxController",
+    "ContainingType": "Onebox_backend.Controllers.API.BoxController",
     "Method": "LockAsync",
     "RelativePath": "api/Box/{id}/lock",
     "HttpMethod": "POST",
@@ -16,7 +16,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Onebox_backend.Controllers.BoxController",
+    "ContainingType": "Onebox_backend.Controllers.API.BoxController",
     "Method": "GetStateAsync",
     "RelativePath": "api/Box/{id}/state",
     "HttpMethod": "GET",
@@ -32,7 +32,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Onebox_backend.Controllers.BoxController",
+    "ContainingType": "Onebox_backend.Controllers.API.BoxController",
     "Method": "UnlockAsync",
     "RelativePath": "api/Box/{id}/unlock",
     "HttpMethod": "POST",
@@ -48,13 +48,45 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Onebox_backend.Controllers.BoxController",
+    "ContainingType": "Onebox_backend.Controllers.API.BoxController",
     "Method": "GetStateAsync",
     "RelativePath": "api/Box/all",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Onebox_backend.Controllers.API.TrackingController",
+    "Method": "TrackByIdAsync",
+    "RelativePath": "api/Tracking/track/{custID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "custID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Onebox_backend.Controllers.API.TrackingController",
+    "Method": "TrackAllAsync",
+    "RelativePath": "api/Tracking/track/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   }
 ]

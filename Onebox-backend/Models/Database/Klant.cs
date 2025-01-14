@@ -17,5 +17,5 @@ public partial class Klant
 
     public virtual ICollection<Box> Boxes { get; set; } = new List<Box>();
 
-    public virtual ICollection<Leveringen> Leveringens { get; set; } = new List<Leveringen>();
+    public virtual ICollection<Leveringen> Leveringen { get; set; } = new List<Leveringen>();
 }

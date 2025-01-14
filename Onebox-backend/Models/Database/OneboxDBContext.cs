@@ -19,11 +19,11 @@ public partial class OneboxDBContext : DbContext
 
     public virtual DbSet<Box> Boxes { get; set; }
 
-    public virtual DbSet<Klant> Klants { get; set; }
+    public virtual DbSet<Klant> Klanten { get; set; }
 
-    public virtual DbSet<Leveringen> Leveringens { get; set; }
+    public virtual DbSet<Leveringen> Leveringen { get; set; }
 
-    public virtual DbSet<Opsturingsbedrijf> Opsturingsbedrijfs { get; set; }
+    public virtual DbSet<Opsturingsbedrijf> Opsturingsbedrijven { get; set; }
 
     public virtual DbSet<Package> Packages { get; set; }
 
@@ -97,7 +97,7 @@ public partial class OneboxDBContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false);
 
-            entity.HasOne(d => d.Klant).WithMany(p => p.Leveringens)
+            entity.HasOne(d => d.Klant).WithMany(p => p.Leveringen)
                 .HasForeignKey(d => d.KlantId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Leveringen_Klant1");

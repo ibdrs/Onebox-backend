@@ -13,6 +13,7 @@ builder.Services.AddDbContext<OneboxDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("OneboxDB")));
 
 builder.Services.AddScoped<BoxModel>();
+builder.Services.AddScoped<TrackingModel>();
 
 builder.Services.AddCors(options =>
 {
@@ -22,6 +23,13 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
+});
+
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+{
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+        options.JsonSerializerOptions.WriteIndented = true;
 });
 
 var app = builder.Build();
