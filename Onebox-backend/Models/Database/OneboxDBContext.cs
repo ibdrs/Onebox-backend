@@ -28,6 +28,8 @@ public partial class OneboxDBContext : DbContext
     public virtual DbSet<Package> Packages { get; set; }
 
     public virtual DbSet<Schade> Schades { get; set; }
+    public virtual DbSet<Users> Users { get; set; }
+
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=onebox;Trusted_Connection=True;");
@@ -141,6 +143,33 @@ public partial class OneboxDBContext : DbContext
                 .HasMaxLength(10)
                 .IsUnicode(false)
                 .HasColumnName("TypeID");
+        });
+
+        modelBuilder.Entity<Users>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK_Users");
+
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .HasColumnName("Id");
+
+            entity.Property(e => e.Username)
+                .IsRequired()
+                .HasMaxLength(100);
+
+            entity.Property(e => e.Password)
+                .IsRequired()
+                .HasMaxLength(255);
+
+            entity.Property(e => e.KlantID)
+                .IsRequired()
+                .HasColumnName("KlantID");
+
+            entity.HasOne(d => d.Klant)
+                .WithMany(p => p.Users)
+                .HasForeignKey(d => d.KlantID)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Users_Klant");
         });
 
         OnModelCreatingPartial(modelBuilder);

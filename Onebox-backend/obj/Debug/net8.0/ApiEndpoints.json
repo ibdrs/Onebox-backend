@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "Onebox_backend.Controllers.API.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Onebox_backend.Controllers.API.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Onebox_backend.Controllers.API.BoxController",
     "Method": "LockAsync",
     "RelativePath": "api/Box/{id}/lock",

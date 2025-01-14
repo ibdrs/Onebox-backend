@@ -14,6 +14,7 @@ builder.Services.AddDbContext<OneboxDBContext>(options =>
 
 builder.Services.AddScoped<BoxModel>();
 builder.Services.AddScoped<TrackingModel>();
+builder.Services.AddScoped<AuthModel>();
 
 builder.Services.AddCors(options =>
 {
