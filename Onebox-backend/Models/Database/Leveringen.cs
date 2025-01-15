@@ -11,9 +11,9 @@ public partial class Leveringen
 
     public TimeOnly? Retourtijd { get; set; }
 
-    public TimeOnly? Tijd { get; set; }
+    public TimeSpan Tijd { get; set; }
 
-    public DateOnly? Datum { get; set; }
+    public DateTime Datum { get; set; }
 
     public string? Vervoersmethode { get; set; }
 
@@ -26,6 +26,8 @@ public partial class Leveringen
     public bool? Pakketintact { get; set; }
 
     public int KlantId { get; set; }
+
+    public string? Track_and_trace_code { get; set; }
 
     public virtual Klant Klant { get; set; } = null!;
 }

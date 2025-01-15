@@ -99,6 +99,9 @@ public partial class OneboxDBContext : DbContext
             entity.Property(e => e.Vervoersmethode)
                 .HasMaxLength(255)
                 .IsUnicode(false);
+            entity.Property(e => e.Track_and_trace_code)
+                .HasMaxLength(255)
+                .IsUnicode(false);
 
             entity.HasOne(d => d.Klant).WithMany(p => p.Leveringen)
                 .HasForeignKey(d => d.KlantId)
