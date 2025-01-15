@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\models\\database\\leveringen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|solutionrelative:onebox-backend\\models\\database\\leveringen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\models\\trackingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|solutionrelative:onebox-backend\\models\\trackingmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\models\\database\\oneboxdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|solutionrelative:onebox-backend\\models\\database\\oneboxdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\controllers\\api\\trackingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|solutionrelative:onebox-backend\\controllers\\api\\trackingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\controllers\\api\\boxcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|solutionrelative:onebox-backend\\controllers\\api\\boxcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\models\\database\\leveringen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|solutionrelative:onebox-backend\\models\\database\\leveringen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\models\\database\\oneboxdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|solutionrelative:onebox-backend\\models\\database\\oneboxdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\models\\boxmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\controllers\\api\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|solutionrelative:onebox-backend\\controllers\\api\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\controllers\\api\\boxcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|solutionrelative:onebox-backend\\controllers\\api\\boxcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CDB8B290-C475-4BD8-9F72-5768824AD200}|Onebox-backend\\Onebox-backend.csproj|c:\\users\\ivanb\\source\\repos\\onebox-backend\\onebox-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -92,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "OneboxDBContext.cs",
               "DocumentMoniker": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Models\\Database\\OneboxDBContext.cs",
               "RelativeDocumentMoniker": "Onebox-backend\\Models\\Database\\OneboxDBContext.cs",
@@ -106,13 +106,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TrackingModel.cs",
               "DocumentMoniker": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Models\\TrackingModel.cs",
               "RelativeDocumentMoniker": "Onebox-backend\\Models\\TrackingModel.cs",
               "ToolTip": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Models\\TrackingModel.cs",
               "RelativeToolTip": "Onebox-backend\\Models\\TrackingModel.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAAAD8AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAQwEAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-19T12:45:35.3Z",
               "IsPinned": true,
@@ -120,13 +120,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "TrackingController.cs",
               "DocumentMoniker": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Controllers\\API\\TrackingController.cs",
               "RelativeDocumentMoniker": "Onebox-backend\\Controllers\\API\\TrackingController.cs",
               "ToolTip": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Controllers\\API\\TrackingController.cs",
               "RelativeToolTip": "Onebox-backend\\Controllers\\API\\TrackingController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAB8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T09:35:59.709Z",
               "IsPinned": true,
@@ -146,20 +146,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "BoxController.cs",
               "DocumentMoniker": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Controllers\\API\\BoxController.cs",
               "RelativeDocumentMoniker": "Onebox-backend\\Controllers\\API\\BoxController.cs",
               "ToolTip": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Controllers\\API\\BoxController.cs",
               "RelativeToolTip": "Onebox-backend\\Controllers\\API\\BoxController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBYAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T10:41:28.189Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Controllers\\API\\AuthController.cs",
               "RelativeDocumentMoniker": "Onebox-backend\\Controllers\\API\\AuthController.cs",
@@ -185,20 +185,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Leveringen.cs",
               "DocumentMoniker": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Models\\Database\\Leveringen.cs",
               "RelativeDocumentMoniker": "Onebox-backend\\Models\\Database\\Leveringen.cs",
               "ToolTip": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Models\\Database\\Leveringen.cs",
               "RelativeToolTip": "Onebox-backend\\Models\\Database\\Leveringen.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA9wA0AAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvxsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T10:29:03.532Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "BoxModel.cs",
               "DocumentMoniker": "C:\\Users\\ivanb\\source\\repos\\Onebox-backend\\Onebox-backend\\Models\\BoxModel.cs",
               "RelativeDocumentMoniker": "Onebox-backend\\Models\\BoxModel.cs",

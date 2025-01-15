@@ -76,14 +76,14 @@
   {
     "ContainingType": "Onebox_backend.Controllers.API.TrackingController",
     "Method": "TrackByIdAsync",
-    "RelativePath": "api/Tracking/track/{klantId}",
+    "RelativePath": "api/Tracking/track/{trackingCode}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "klantId",
-        "Type": "System.Int32",
+        "Name": "trackingCode",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

@@ -57,10 +57,10 @@ namespace Onebox_backend.Models
 
 
 
-        public async Task<TrackingDetails> GetTrackingAsync(int klantId)
+        public async Task<TrackingDetails> GetTrackingAsync(string trackingCode)
         {
             var trackingDetail = await _context.Leveringen
-                .Where(l => l.KlantId == klantId)
+                .Where(l => l.Track_and_trace_code == trackingCode)
                 .Join(
                     _context.Klanten,
                     levering => levering.KlantId,
@@ -76,7 +76,7 @@ namespace Onebox_backend.Models
                         Postcode = klant.Postcode
                     }
                 )
-                .OrderBy(l => l.LeveringsDatum)
+                .OrderBy(l => l.LeveringsDatum) 
                 .FirstOrDefaultAsync();
 
             return trackingDetail;

@@ -29,12 +29,12 @@ namespace Onebox_backend.Controllers.API
         }
 
 
-        [HttpGet("track/{klantId}")]
-        public async Task<IActionResult> TrackByIdAsync(int klantId)
+        [HttpGet("track/{trackingCode}")]
+        public async Task<IActionResult> TrackByIdAsync(string trackingCode)
         {
             try
             {
-                var trackingInfo = await _trackingModel.GetTrackingAsync(klantId);
+                var trackingInfo = await _trackingModel.GetTrackingAsync(trackingCode);
                 return Ok(trackingInfo);
             }
             catch (KeyNotFoundException ex)
