@@ -42,7 +42,7 @@ namespace Onebox_backend.Controllers.API
             });
         }
 
-        private string GenerateJwtToken(string username, int KlantID)
+        private static string GenerateJwtToken(string username, int KlantID)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes("this-is-a-256-bit-key-for-jwt-token-onebox"); // jwt-token

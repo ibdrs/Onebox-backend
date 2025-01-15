@@ -38,14 +38,14 @@ namespace Onebox_backend.Models
         }
 
 
-        public async Task<TrackingInfo> GetTrackingAsync(int custID)
+        public async Task<TrackingInfo> GetTrackingAsync(int klantId)
         {
             var deliveries = await _context.Leveringen
-                .Where(l => l.KlantId == custID)
+                .Where(l => l.KlantId == klantId)
                 .ToListAsync();
 
             var customers = await _context.Klanten
-                .Where(k => k.KlantId == custID)
+                .Where(k => k.KlantId == klantId)
                 .ToListAsync();
 
             return new TrackingInfo

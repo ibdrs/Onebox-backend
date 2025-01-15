@@ -15,6 +15,7 @@ namespace Onebox_backend.Models
             _context = context;
         }
 
+        //method met returntype, zelf gemaakt. Box.cs
         public async Task<List<Box>> GetAllBoxesAsync()
         {
             var boxes = await _context.Boxes.ToListAsync();

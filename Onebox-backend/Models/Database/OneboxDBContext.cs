@@ -8,6 +8,7 @@ public partial class OneboxDBContext : DbContext
 {
     public OneboxDBContext()
     {
+        
     }
 
     public OneboxDBContext(DbContextOptions<OneboxDBContext> options)
