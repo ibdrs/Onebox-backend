@@ -10,4 +10,6 @@ public partial class Schade
     public string? Schadetype { get; set; }
 
     public string? TypeId { get; set; }
+
+    public int? PakketId { get; set; }
 }

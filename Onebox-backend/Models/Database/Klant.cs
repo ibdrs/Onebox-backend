@@ -15,9 +15,6 @@ public partial class Klant
 
     public string? Postcode { get; set; }
 
+    public virtual ICollection<User> Users { get; set; } = new List<User>();
     public virtual ICollection<Box> Boxes { get; set; } = new List<Box>();
-
-    public virtual ICollection<Leveringen> Leveringen { get; set; } = new List<Leveringen>();
-    public virtual ICollection<Users> Users { get; set; } = new List<Users>();
-
 }

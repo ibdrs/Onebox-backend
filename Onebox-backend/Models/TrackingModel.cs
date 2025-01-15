@@ -23,8 +23,8 @@ namespace Onebox_backend.Models
         public class TrackingDetails
         {
             public string TrackAndTraceCode { get; set; }
-            public DateTime LeveringsDatum { get; set; }
-            public TimeSpan SchattingLevertijd { get; set; }
+            public string LeveringsDatum { get; set; }
+            public string SchattingLevertijd { get; set; }
             public string Naam { get; set; }
             public string Adres { get; set; }
             public string Woonplaats { get; set; }
@@ -41,7 +41,7 @@ namespace Onebox_backend.Models
                     klant => klant.KlantId,
                     (levering, klant) => new TrackingDetails
                     {
-                        TrackAndTraceCode = levering.Track_and_trace_code,
+                        TrackAndTraceCode = levering.TrackAndTraceCode,
                         LeveringsDatum = levering.Datum,
                         SchattingLevertijd = levering.Tijd,
                         Naam = klant.Naam,
@@ -60,14 +60,14 @@ namespace Onebox_backend.Models
         public async Task<TrackingDetails> GetTrackingAsync(string trackingCode)
         {
             var trackingDetail = await _context.Leveringen
-                .Where(l => l.Track_and_trace_code == trackingCode)
+                .Where(l => l.TrackAndTraceCode == trackingCode)
                 .Join(
                     _context.Klanten,
                     levering => levering.KlantId,
                     klant => klant.KlantId,
                     (levering, klant) => new TrackingDetails
                     {
-                        TrackAndTraceCode = levering.Track_and_trace_code,
+                        TrackAndTraceCode = levering.TrackAndTraceCode,
                         LeveringsDatum = levering.Datum,
                         SchattingLevertijd = levering.Tijd,
                         Naam = klant.Naam,

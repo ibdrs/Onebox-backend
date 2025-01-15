@@ -5,15 +5,15 @@ namespace Onebox_backend.Models.Database;
 
 public partial class Leveringen
 {
-    public int DeliveryId { get; set; }
+    public int Id { get; set; }
 
-    public TimeOnly? Vertrektijd { get; set; }
+    public string? Vertrektijd { get; set; }
 
-    public TimeOnly? Retourtijd { get; set; }
+    public string? Retourtijd { get; set; }
 
-    public TimeSpan Tijd { get; set; }
+    public string? Tijd { get; set; }
 
-    public DateTime Datum { get; set; }
+    public string? Datum { get; set; }
 
     public string? Vervoersmethode { get; set; }
 
@@ -23,11 +23,11 @@ public partial class Leveringen
 
     public string? TevredenheidKlant { get; set; }
 
-    public bool? Pakketintact { get; set; }
+    public string? Pakketintact { get; set; }
 
-    public int KlantId { get; set; }
+    public int? KlantId { get; set; }
 
-    public string? Track_and_trace_code { get; set; }
+    public int? PakketId { get; set; }
 
-    public virtual Klant Klant { get; set; } = null!;
+    public string TrackAndTraceCode { get; set; } = null!;
 }

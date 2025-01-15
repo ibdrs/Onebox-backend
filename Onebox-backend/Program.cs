@@ -9,8 +9,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//mysql connection
+var connectionString = builder.Configuration.GetConnectionString("OneboxDB");
 builder.Services.AddDbContext<OneboxDBContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("OneboxDB")));
+{
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+});
 
 builder.Services.AddScoped<BoxModel>();
 builder.Services.AddScoped<TrackingModel>();

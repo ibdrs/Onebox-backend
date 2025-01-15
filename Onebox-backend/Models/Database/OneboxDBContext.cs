@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
 
 namespace Onebox_backend.Models.Database;
 
@@ -8,7 +9,6 @@ public partial class OneboxDBContext : DbContext
 {
     public OneboxDBContext()
     {
-        
     }
 
     public OneboxDBContext(DbContextOptions<OneboxDBContext> options)
@@ -20,26 +20,35 @@ public partial class OneboxDBContext : DbContext
 
     public virtual DbSet<Box> Boxes { get; set; }
 
+    public virtual DbSet<BoxLogbook> BoxLogbooks { get; set; }
+
     public virtual DbSet<Klant> Klanten { get; set; }
 
     public virtual DbSet<Leveringen> Leveringen { get; set; }
 
-    public virtual DbSet<Opsturingsbedrijf> Opsturingsbedrijven { get; set; }
+    public virtual DbSet<OneBoxReview> OneBoxReviews { get; set; }
 
-    public virtual DbSet<Package> Packages { get; set; }
+    public virtual DbSet<Opsturingsbedrijf> Opsturingsbedrijfs { get; set; }
+
+    public virtual DbSet<Pakket> Pakketen { get; set; }
 
     public virtual DbSet<Schade> Schades { get; set; }
-    public virtual DbSet<Users> Users { get; set; }
 
+    public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=onebox;Trusted_Connection=True;");
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseMySql("server=172.16.2.4;database=onebox_live;user=onebox;password=DbSecure1234!", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.40-mysql"));
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder
+            .UseCollation("utf8mb4_general_ci")
+            .HasCharSet("utf8mb4");
+
         modelBuilder.Entity<Bezorger>(entity =>
         {
-            entity.HasKey(e => e.BezorgerId).HasName("PK__Bezorger__B3A23682E1EC7388");
+            entity.HasKey(e => e.BezorgerId).HasName("PRIMARY");
 
             entity.Property(e => e.BezorgerId)
                 .ValueGeneratedNever()
@@ -64,9 +73,23 @@ public partial class OneboxDBContext : DbContext
                 .HasConstraintName("FK_Box_Klant");
         });
 
+        modelBuilder.Entity<BoxLogbook>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToTable("BoxLogbook");
+
+            entity.Property(e => e.AanvraagDicht).HasColumnType("datetime");
+            entity.Property(e => e.AanvraagOpen).HasColumnType("datetime");
+            entity.Property(e => e.BoxId).HasColumnName("BoxID");
+            entity.Property(e => e.Id).HasColumnName("ID");
+            entity.Property(e => e.UitvoeringDicht).HasColumnType("datetime");
+            entity.Property(e => e.UitvoeringOpen).HasColumnType("datetime");
+        });
+
         modelBuilder.Entity<Klant>(entity =>
         {
-            entity.HasKey(e => e.KlantId).HasName("PK__Klant__A2633BE2DA66A13B");
+            entity.HasKey(e => e.KlantId).HasName("PRIMARY");
 
             entity.ToTable("Klant");
 
@@ -79,34 +102,43 @@ public partial class OneboxDBContext : DbContext
 
         modelBuilder.Entity<Leveringen>(entity =>
         {
-            entity.HasKey(e => e.DeliveryId).HasName("PK__Levering__3214EC2702A467E6");
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
 
             entity.ToTable("Leveringen");
 
-            entity.Property(e => e.DeliveryId)
+            entity.Property(e => e.Id)
                 .ValueGeneratedNever()
-                .HasColumnName("DeliveryID");
+                .HasColumnName("ID");
+            entity.Property(e => e.Datum).HasColumnType("text");
             entity.Property(e => e.KlantId).HasColumnName("KlantID");
-            entity.Property(e => e.Leveringsituatie)
+            entity.Property(e => e.Leveringsituatie).HasColumnType("text");
+            entity.Property(e => e.PakketId).HasColumnName("PakketID");
+            entity.Property(e => e.Pakketintact).HasColumnType("text");
+            entity.Property(e => e.ReactieAanDeur).HasColumnType("text");
+            entity.Property(e => e.Retourtijd).HasColumnType("text");
+            entity.Property(e => e.TevredenheidKlant).HasColumnType("text");
+            entity.Property(e => e.Tijd).HasColumnType("text");
+            entity.Property(e => e.TrackAndTraceCode)
                 .HasMaxLength(255)
-                .IsUnicode(false);
-            entity.Property(e => e.ReactieAanDeur)
-                .HasMaxLength(255)
-                .IsUnicode(false);
-            entity.Property(e => e.TevredenheidKlant)
-                .HasMaxLength(255)
-                .IsUnicode(false);
-            entity.Property(e => e.Vervoersmethode)
-                .HasMaxLength(255)
-                .IsUnicode(false);
-            entity.Property(e => e.Track_and_trace_code)
-                .HasMaxLength(255)
-                .IsUnicode(false);
+                .HasColumnName("track_and_trace_code");
+            entity.Property(e => e.Vertrektijd).HasColumnType("text");
+            entity.Property(e => e.Vervoersmethode).HasColumnType("text");
+        });
 
-            entity.HasOne(d => d.Klant).WithMany(p => p.Leveringen)
-                .HasForeignKey(d => d.KlantId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Leveringen_Klant1");
+        modelBuilder.Entity<OneBoxReview>(entity =>
+        {
+            entity.HasKey(e => e.KlantId).HasName("PRIMARY");
+
+            entity.ToTable("OneBox_Review");
+
+            entity.Property(e => e.KlantId)
+                .ValueGeneratedNever()
+                .HasColumnName("KlantID");
+            entity.Property(e => e.BetrekkingOp)
+                .HasMaxLength(50)
+                .HasColumnName("betrekking_op");
+            entity.Property(e => e.Cijfer).HasColumnName("cijfer");
+            entity.Property(e => e.Datum).HasColumnName("datum");
         });
 
         modelBuilder.Entity<Opsturingsbedrijf>(entity =>
@@ -115,22 +147,19 @@ public partial class OneboxDBContext : DbContext
                 .HasNoKey()
                 .ToTable("Opsturingsbedrijf");
 
-            entity.Property(e => e.Naam)
-                .HasMaxLength(6)
-                .IsUnicode(false);
+            entity.Property(e => e.Naam).HasMaxLength(6);
             entity.Property(e => e.OpsturingsbedrijfId).HasColumnName("OpsturingsbedrijfID");
         });
 
-        modelBuilder.Entity<Package>(entity =>
+        modelBuilder.Entity<Pakket>(entity =>
         {
-            entity.ToTable("Package");
+            entity
+                .HasNoKey()
+                .ToTable("Pakket");
 
-            entity.Property(e => e.PackageId)
-                .ValueGeneratedNever()
-                .HasColumnName("PackageID");
-            entity.Property(e => e.BoxId).HasColumnName("BoxID");
-            entity.Property(e => e.PackageSize).HasMaxLength(50);
-            entity.Property(e => e.TrackingCode).HasMaxLength(50);
+            entity.Property(e => e.Gewicht).HasMaxLength(3);
+            entity.Property(e => e.Groote).HasMaxLength(19);
+            entity.Property(e => e.PakketId).HasColumnName("PakketID");
         });
 
         modelBuilder.Entity<Schade>(entity =>
@@ -139,41 +168,29 @@ public partial class OneboxDBContext : DbContext
                 .HasNoKey()
                 .ToTable("Schade");
 
+            entity.Property(e => e.PakketId).HasColumnName("PakketID");
             entity.Property(e => e.SchadeId).HasColumnName("SchadeID");
-            entity.Property(e => e.Schadetype)
-                .HasMaxLength(18)
-                .IsUnicode(false);
+            entity.Property(e => e.Schadetype).HasMaxLength(18);
             entity.Property(e => e.TypeId)
                 .HasMaxLength(10)
-                .IsUnicode(false)
                 .HasColumnName("TypeID");
         });
 
-        modelBuilder.Entity<Users>(entity =>
+        modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK_Users");
+            entity.HasKey(e => e.Id).HasName("PRIMARY");
 
-            entity.Property(e => e.Id)
-                .ValueGeneratedOnAdd()
-                .HasColumnName("Id");
+            entity.HasIndex(e => e.KlantId, "KlantID");
 
-            entity.Property(e => e.Username)
-                .IsRequired()
-                .HasMaxLength(100);
+            entity.HasIndex(e => e.Username, "Username").IsUnique();
 
-            entity.Property(e => e.Password)
-                .IsRequired()
-                .HasMaxLength(255);
+            entity.Property(e => e.KlantId).HasColumnName("KlantID");
+            entity.Property(e => e.Password).HasMaxLength(255);
+            entity.Property(e => e.Username).HasMaxLength(100);
 
-            entity.Property(e => e.KlantID)
-                .IsRequired()
-                .HasColumnName("KlantID");
-
-            entity.HasOne(d => d.Klant)
-                .WithMany(p => p.Users)
-                .HasForeignKey(d => d.KlantID)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Users_Klant");
+            entity.HasOne(d => d.Klant).WithMany(p => p.Users)
+                .HasForeignKey(d => d.KlantId)
+                .HasConstraintName("Users_ibfk_1");
         });
 
         OnModelCreatingPartial(modelBuilder);

@@ -21,7 +21,7 @@ namespace Onebox_backend.Models
 
             if (user != null)
             {
-                return (true, user.KlantID);
+                return (true, user.KlantId);
             }
 
             return (false, 0);
